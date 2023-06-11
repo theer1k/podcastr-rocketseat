@@ -1,0 +1,30 @@
+{
+  "presets": ["next/babel"],
+  "plugins": [
+    "@babel/plugin-proposal-do-expressions",
+    [
+      "module-resolver",
+      {
+        "root": ["./"],
+        "alias": {
+          "@components": "./src/components",
+          "@api": "./src/api",
+          "@models": "./src/models",
+          "@screens": "./src/screens",
+          "@hooks": "./src/hooks",
+          "@services": "./src/services",
+          "@constants": "./src/constants",
+          "@shared": "./src/shared",
+          "@enums": "./src/enums",
+          "@contexts": "./src/contexts",
+          "@queries": "./src/queries",
+          "@data": "./src/data",
+          "@typeDefs": "./src/types",
+          "@generated": "./src/generated",
+          "@utils": "./src/utils",
+          "@public": "./public"
+        }
+      }
+    ]
+  ]
+}
